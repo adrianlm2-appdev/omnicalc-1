@@ -39,7 +39,7 @@ class ApplicationController < ActionController::Base
     @apr = params.fetch("apr").to_f
     @principal = params.fetch("principal").to_f
     @years = params.fetch("years").to_f
-    @payment = (@principal * ((1+@apr) ** @years) ) / (@years * 12)
+    @payment = (@principal * ((1+@apr) ** @years) ) / (@years * 12).to_f
 
     render({:template => "calculation_templates/payment_results.html.erb"})
   end
