@@ -10,6 +10,6 @@
   <dd> <%= @principal.to_s(:currency) %> </dd>
 
   <dt>Payment</dt>
-  <dd> <%= @payment.to_s(:currency) %> </dd>
+  <dd> <%= @payment.to_s(:currency, { :precision => 2} ) %> </dd>
 
 </dl>
