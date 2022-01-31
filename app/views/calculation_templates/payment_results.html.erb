@@ -7,7 +7,7 @@
   <dd> <%= @years %> </dd>
 
   <dt>Principal</dt>
-  <dd> <%= @principal.to_s(:currency) %> </dd>
+  <dd> <%= @principal.to_s(:currency, {:precision => 2} ) %> </dd>
 
   <dt>Payment</dt>
   <dd> <%= @payment.to_s(:currency, { :precision => 2} ) %> </dd>
