@@ -1,7 +1,7 @@
 <dl> 
 
   <dt>APR</dt>
-  <dd> <%= @apr.to_s(:percentage) %> </dd>
+  <dd> <%= @apr..to_s(:percentage, { :precision => 4 } )  %> </dd>
   
   <dt>Number of years</dt>
   <dd> <%= @years %> </dd>
